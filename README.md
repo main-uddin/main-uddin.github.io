@@ -1,24 +1,10 @@
-# Libretto - Jekyll Theme
+# jekyllDecent
+[![Build Status](https://travis-ci.org/jwillmer/jekyllDecent.svg?branch=gh-pages)](https://travis-ci.org/jwillmer/jekyllDecent) 
+[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](#license)
+[![Release v1.1.7](https://img.shields.io/badge/release-v1.1.8-blue.svg)](https://github.com/jwillmer/jekyllDecent/releases/tag/1.1.8)
 
-Libretto is a responsive one-column Jekyll theme with classic styling and careful typographic details.
+This is a blog template for a static site generator named [Jekyll](https://jekyllrb.com/docs/home/) based on a [Ghost](https://ghost.org) template named [Decent](https://github.com/serenader2014/decent). 
 
-Based on the [Libretto Wordpress theme](https://wordpress.org/themes/libretto/).
+Installation instructions, features, previews and more can be found in the **[GitHub generated blog](https://jwillmer.github.io/jekyllDecent)**. This blog is automatically generated out of the source code in the `gh-pages` branch. If you like to see the theme in production have a look at [jwillmer.de](https://jwillmer.de).
 
-## Install and Test
-
-1. Download or clone the repo
-  - `git clone git@github.com:ferrolho/jekyll-theme-libretto.git`
-2. Enter the folder
-  - `cd jekyll-theme-libretto/`
-3. Start Jekyll server
-  - `jekyll serve --watch`
-4. Access via
-  - http://127.0.0.1:4000/jekyll-theme-libretto/
-
-## Demo
-
-- https://ferrolho.github.io/jekyll-theme-libretto/
-
-## Preview
-
-![Theme preview](http://i.imgur.com/2ZCmoKo.png)
+[![](https://raw.githubusercontent.com/jwillmer/jekyllDecent/gh-pages/media/img/2016-06-08-Readme-front-page-previewe.jpg)](https://jwillmer.github.io/jekyllDecent)

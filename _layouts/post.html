@@ -1,37 +1,37 @@
 ---
 layout: default
 ---
+<main class="content" role="main">
+    <article class="post single-post" itemscope itemtype="http://schema.org/BlogPosting">
 
-<header class="post-header">
-	<div>
-		<span>Posted on </span><span class="post-meta">{{ page.date | date: "%B %-d, %Y" }}</span>
-	</div>
+        <header class="post-header short-diver">
+            <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+            <section class="post-meta">
+                <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+                on
+                {% for tag in page.tags limit:5 %}
+                <span>{{ tag }}</span>
+                {% endfor %}
+            </section>
+        </header>
 
-	<h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-</header>
+        <section class="post-content short-diver" itemprop="articleBody">
+            {{content}}
+        </section>
 
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="entry-content" itemprop="articleBody">
-		{{ content }}
-	</div>
-</article>
+        <footer class="post-footer">
+            {% include authorinfo.html param=page.author %}
+        </footer>
 
-<div id="post-nav">
-	<div class="next">
-		{% if page.next.url %}
-		<a href="{{ site.baseurl }}{{ page.next.url }}">
-			<span>Next entry</span>
-			{{ page.next.title }}
-		</a>
-		{% endif %}
-	</div>
+        {% if page.comments %}
+    		<div class="comments">
+    			<a href="javascript:;" class="view-comments"><i class="fa fa-comments"></i>View Comments...</a>
+    			<div id="disqus_thread"></div>
+    		</div>
+    		{% endif %}
 
-	<div class="previous">
-		{% if page.previous.url %}
-		<a href="{{ site.baseurl }}{{ page.previous.url }}">
-			<span>Previous entry</span>
-			{{ page.previous.title }}
-		</a>
-		{% endif %}
-	</div>
-</div>
+    </article>
+</main>
+
+{% include photoswipe.html %}
+{% include post_scripts.html %}
